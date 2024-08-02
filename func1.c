@@ -17,16 +17,15 @@ int main(){
     return 0;
 }
 
-void DrawBlock(int w,int l,char ch){
-    for(int x=1; x<=l; l++){
-        DrawLine(w,ch);
-    }
-    printf("\n");
-}
-
 void DrawLine(int wide,char p){
 for(int i=1; i<=wide; i++){
     printf("%c",p);
 }
 
+}
+void DrawBlock(int w,int l,char ch){
+    for(int x=1; x<=l; l++){
+        DrawLine(w,ch);
+    }
+    printf("\n");
 }
